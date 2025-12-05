@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events 2026 | EarlyCode - Tech Workshops & Bootcamps</title>
+    <link rel="stylesheet" href="events-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="https://www.earlycode.net/favicon.ico">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="https://www.earlycode.net" class="logo">
+                    <div class="logo-icon">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+                    <span class="logo-span">early code</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="https://www.earlycode.net">Home</a></li>
+                    <li><a href="https://www.earlycode.net/courses">Courses</a></li>
+                    <li class="active"><a href="#events">Events</a></li>
+                    <li><a href="https://www.earlycode.net/locations">Locations</a></li>
+                    <li><a href="https://www.earlycode.net/about-us">About</a></li>
+                    <li><a href="https://www.earlycode.net/contact-us">Contact</a></li>
+                </ul>
+                <!-- <div class="nav-actions">
+                    <button class="btn btn-outline">Sign In</button>
+                    <button class="btn btn-primary">Join Free</button>
+                </div>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button> -->
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">EarlyCode Events 2026</h1>
+                <p class="hero-subtitle">Join our vibrant community for hands-on workshops, intensive bootcamps, and insightful seminars designed to accelerate your tech career. Learn from industry experts, network with peers, and gain practical skills.</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Events This Year</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">12K+</span>
+                        <span class="stat-label">Community Members</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">96%</span>
+                        <span class="stat-label">Satisfaction Rate</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Expert Instructors</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <main class="events-main">
+        <div class="container">
+            <!-- Filters -->
+            <section class="events-filters">
+                <div class="filters-header">
+                    <h2 class="section-title">Upcoming Events</h2>
+                    <p>Discover tech workshops, bootcamps and seminars scheduled for 2026. Filter by category, date, or status to find events that match your interests.</p>
+                </div>
+                <div class="filter-controls">
+                    <div class="filter-group">
+                        <label for="category-filter"><i class="fas fa-filter"></i> Filter by Category</label>
+                        <select id="category-filter" class="filter-select">
+                            <option value="all">All Events</option>
+                            <option value="workshop">Workshops</option>
+                            <option value="bootcamp">Bootcamps</option>
+                            <option value="seminar">Seminars</option>
+                            <option value="webinar">Webinars</option>
+                            <option value="conference">Conferences</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="date-filter"><i class="fas fa-calendar-alt"></i> Sort by Date</label>
+                        <select id="date-filter" class="filter-select">
+                            <option value="upcoming">Upcoming First</option>
+                            <option value="latest">Latest First</option>
+                            <option value="month">This Month</option>
+                            <option value="quarter">This Quarter</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="status-filter"><i class="fas fa-circle"></i> Event Status</label>
+                        <select id="status-filter" class="filter-select">
+                            <option value="all">All Status</option>
+                            <option value="upcoming">Upcoming</option>
+                            <option value="ongoing">Ongoing</option>
+                            <option value="completed">Completed</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-secondary reset-filters">
+                        <i class="fas fa-redo-alt"></i> Reset Filters
+                    </button>
+                </div>
+            </section>
+
+            <!-- Events Grid -->
+            <section class="events-grid" id="events-container">
+                <!-- Event Card 1 -->
+                <article class="event-card" data-category="workshop" data-status="upcoming">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1618927377242-d9640397483a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product Design vs Development Workshop">
+                        <span class="event-tag event-tag-workshop">Workshop</span>
+                        <span class="event-status status-upcoming">Upcoming</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date">
+                            <i class="far fa-calendar"></i>
+                            <span>Jan 15, 2026</span>
+                        </div>
+                        <h3 class="event-title">Product Designers vs Product Developers: Understanding Their Roles</h3>
+                        <p class="event-description">Discover the key differences between product designers and product developers. Learn how each role shapes user experiences and brings digital products to life in modern teams. This hands-on workshop includes case studies and collaborative exercises.</p>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <i class="far fa-clock"></i>
+                                <span>10:00 AM - 2:00 PM (4 hours)</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>EarlyCode Kubwa Campus</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-user-friends"></i>
+                                <span>Max: 24 participants</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <span>Speaker: Sarah Johnson</span>
+                            </div>
+                        </div>
+                        <div class="event-meta">
+                            <div class="event-price free">FREE</div>
+                            <div class="event-actions">
+                                <button class="btn-bookmark" data-event="1">
+                                    <i class="far fa-bookmark"></i>
+                                </button>
+                                <a href="#" class="btn btn-primary btn-small">Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Event Card 2 -->
+                <article class="event-card" data-category="workshop" data-status="upcoming">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1634108927657-344acccdc258?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Monetizing Tech Skills Workshop">
+                        <span class="event-tag event-tag-workshop">Workshop</span>
+                        <span class="event-status status-upcoming">Upcoming</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date">
+                            <i class="far fa-calendar"></i>
+                            <span>Feb 10 & Feb 12, 2026</span>
+                        </div>
+                        <h3 class="event-title">Best Ways to Monetize Your Tech Skills in 2026</h3>
+                        <p class="event-description">Learn practical ways to turn your tech skills into steady income in 2026. This workshop highlights high-earning tech niches and shows you how to monetize the skills you already have. Includes freelancing tips, remote work strategies, and passive income ideas.</p>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <i class="far fa-clock"></i>
+                                <span>9:00 AM - 2:00 PM (5 hours each day)</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>EarlyCode Kubwa & Nyanya Campuses</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-user-friends"></i>
+                                <span>Max: 20 participants</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <span>Speaker: Michael Chen</span>
+                            </div>
+                        </div>
+                        <div class="event-meta">
+                            <div class="event-price">
+                                <div class="event-price free">FREE</div>
+                            </div>
+                            <div class="event-actions">
+                                <button class="btn-bookmark" data-event="2">
+                                    <i class="far fa-bookmark"></i>
+                                </button>
+                                <a href="#" class="btn btn-primary btn-small">Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Event Card 3 -->
+                <article class="event-card" data-category="seminar" data-status="upcoming">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1737644467636-6b0053476bb2?q=80&w=1072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="AI Career Seminar">
+                        <span class="event-tag event-tag-seminar">Seminar</span>
+                        <span class="event-status status-upcoming">Upcoming</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date">
+                            <i class="far fa-calendar"></i>
+                            <span>March 5 - March 6, 2026</span>
+                        </div>
+                        <h3 class="event-title">Introduction to AI and Building a Successful Career in 2026</h3>
+                        <p class="event-description">This seminar covers the key AI concepts you need to know and the practical steps to start building a strong, future-ready career in artificial intelligence in 2026. Includes hands-on demos, industry insights, and career pathway guidance.</p>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <i class="far fa-clock"></i>
+                                <span>10:00 AM - 1:00 PM Daily (3 hours each)</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>EarlyCode Kubwa Campus</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-user-friends"></i>
+                                <span>Max: 24 participants</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <span>Speaker: Dr. Aisha Bello</span>
+                            </div>
+                        </div>
+                        <div class="event-meta">
+                            <div class="event-price free">FREE</div>
+                            <div class="event-actions">
+                                <button class="btn-bookmark" data-event="3">
+                                    <i class="far fa-bookmark"></i>
+                                </button>
+                                <a href="#" class="btn btn-primary btn-small">Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Event Card 4 -->
+                <article class="event-card" data-category="bootcamp" data-status="upcoming">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1562577308-9e66f0c65ce5?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Content Creation Bootcamp">
+                        <span class="event-tag event-tag-bootcamp">Bootcamp</span>
+                        <span class="event-status status-upcoming">Upcoming</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date">
+                            <i class="far fa-calendar"></i>
+                            <span>April 3-5, 2026</span>
+                        </div>
+                        <h3 class="event-title">Creating Online Content That Truly Connects With Your Target Audience</h3>
+                        <p class="event-description">A 3-day intensive bootcamp where you'll learn how to create meaningful, targeted content that speaks directly to your audience's needs and drives real engagement. Includes content strategy, creation tools, and analytics.</p>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <i class="far fa-clock"></i>
+                                <span>10:00 AM - 4:00 PM Daily</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>EarlyCode Nyanya Campus</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-user-friends"></i>
+                                <span>Max: 25 participants</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <span>Speaker: David Okonkwo</span>
+                            </div>
+                        </div>
+                        <div class="event-meta">
+                            <div class="event-price">
+                                <span class="original-price">₦10,000</span>
+                                ₦5,000
+                            </div>
+                            <div class="event-actions">
+                                <button class="btn-bookmark" data-event="4">
+                                    <i class="far fa-bookmark"></i>
+                                </button>
+                                <a href="#" class="btn btn-primary btn-small">Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Event Card 5 -->
+                <article class="event-card" data-category="workshop" data-status="upcoming">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Data Security Workshop">
+                        <span class="event-tag event-tag-workshop">Workshop</span>
+                        <span class="event-status status-upcoming">Upcoming</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date">
+                            <i class="far fa-calendar"></i>
+                            <span>May 18 & May 20, 2026</span>
+                        </div>
+                        <h3 class="event-title">Affordable Strategies to Secure Your Data Without Breaking Your Bank</h3>
+                        <p class="event-description">Learn simple, affordable ways to protect your personal and business data using basic security practices and low-cost tools. This practical workshop covers encryption, password management, backup strategies, and threat prevention.</p>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <i class="far fa-clock"></i>
+                                <span>1:00 PM - 4:00 PM (3 hours each day)</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>EarlyCode Kubwa & Nyanya Campuses</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-user-friends"></i>
+                                <span>Max: 20 participants</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <span>Speaker: James Okafor</span>
+                            </div>
+                        </div>
+                        <div class="event-meta">
+                            <div class="event-price">
+                                ₦15,000
+                            </div>
+                            <div class="event-actions">
+                                <button class="btn-bookmark" data-event="5">
+                                    <i class="far fa-bookmark"></i>
+                                </button>
+                                <a href="#" class="btn btn-primary btn-small">Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Event Card 6 -->
+                <article class="event-card" data-category="conference" data-status="upcoming">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Tech Innovation Conference">
+                        <span class="event-tag event-tag-conference">Conference</span>
+                        <span class="event-status status-upcoming">Upcoming</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date">
+                            <i class="far fa-calendar"></i>
+                            <span>June 20 - June 22, 2026</span>
+                        </div>
+                        <h3 class="event-title">EarlyCode Tech Innovation Conference 2026</h3>
+                        <p class="event-description">Our annual flagship conference with industry leaders, networking opportunities, and cutting-edge tech showcases across multiple tracks including AI, Web3, Cybersecurity, and Digital Transformation.</p>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <i class="far fa-clock"></i>
+                                <span>10:00 AM - 4:00 PM Daily</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>EarlyCode Kubwa Campus</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-user-friends"></i>
+                                <span>500+ attendees expected</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <span>5+ industry speakers</span>
+                            </div>
+                        </div>
+                        <div class="event-meta">
+                            <div class="event-price">
+                                <span class="original-price">₦35,000</span>
+                                ₦10,000
+                            </div>
+                            <div class="event-actions">
+                                <button class="btn-bookmark" data-event="6">
+                                    <i class="far fa-bookmark"></i>
+                                </button>
+                                <a href="#" class="btn btn-primary btn-small">Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Event Card 7 -->
+                <article class="event-card" data-category="webinar" data-status="ongoing">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Web Development Webinar">
+                        <span class="event-tag event-tag-webinar">Webinar</span>
+                        <span class="event-status status-ongoing">Live Now</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date">
+                            <i class="far fa-calendar"></i>
+                            <span>December 15, 2025 - January 15, 2026</span>
+                        </div>
+                        <h3 class="event-title">Modern Web Development: From Zero to Deploy</h3>
+                        <p class="event-description">A comprehensive webinar series covering modern web development practices, tools, and deployment strategies. Learn HTML5, CSS3, JavaScript, React, and deployment on cloud platforms.</p>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <i class="far fa-clock"></i>
+                                <span>Self-paced (20 hours total)</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-globe"></i>
+                                <span>Online (Zoom & Recordings)</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-user-friends"></i>
+                                <span>Unlimited participants</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <span>Instructor: Tech Team</span>
+                            </div>
+                        </div>
+                        <div class="event-meta">
+                            <div class="event-price free">FREE</div>
+                            <div class="event-actions">
+                                <button class="btn-bookmark" data-event="7">
+                                    <i class="far fa-bookmark"></i>
+                                </button>
+                                <a href="#" class="btn btn-primary btn-small">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Event Card 8 -->
+                <article class="event-card" data-category="bootcamp" data-status="completed">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mobile App Bootcamp">
+                        <span class="event-tag event-tag-bootcamp">Bootcamp</span>
+                        <span class="event-status status-completed">Completed</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date">
+                            <i class="far fa-calendar"></i>
+                            <span>November 10-14, 2025</span>
+                        </div>
+                        <h3 class="event-title">Mobile App Development Bootcamp: Flutter & React Native</h3>
+                        <p class="event-description">Intensive 5-day bootcamp covering cross-platform mobile app development using Flutter and React Native. Build real-world apps and learn best practices for mobile UI/UX and performance optimization.</p>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <i class="far fa-clock"></i>
+                                <span>9:00 AM - 5:00 PM Daily</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>EarlyCode Kubwa Campus</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-user-friends"></i>
+                                <span>Max: 20 participants</span>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <span>Instructor: Fatima Abdullahi</span>
+                            </div>
+                        </div>
+                        <div class="event-meta">
+                            <div class="event-price">
+                                ₦60,000
+                            </div>
+                            <div class="event-actions">
+                                <button class="btn-bookmark" data-event="8">
+                                    <i class="far fa-bookmark"></i>
+                                </button>
+                                <a href="#" class="btn btn-outline btn-small">View Materials</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Pagination -->
+            <div class="events-pagination">
+                <button class="pagination-btn disabled">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="pagination-btn active">1</button>
+                <button class="pagination-btn">2</button>
+                <button class="pagination-btn">3</button>
+                <span class="pagination-dots">...</span>
+                <button class="pagination-btn">8</button>
+                <button class="pagination-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Call to Action -->
+            <section class="events-cta">
+                <div class="cta-content">
+                    <h2>Have Questions or Need Assistance?</h2>
+                    <p>We're here to help! Reach out to us for any inquiries about our workshops, bootcamps, seminars or our courses. Our team is available to guide you to the right event for your learning goals.</p>
+                    <a href="https://www.earlycode.net/contact-us" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Contact Us
+                    </a>
+                    <p style="margin-top: 1.5rem;"></p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email for event updates">
+                        <button class="btn btn-primary">Subscribe</button>
+                    </div>
+                    <p class="cta-note">Join 5,000+ developers who stay connected with EarlyCode for event announcements and tech insights.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="https://www.earlycode.net" class="logo">
+                        <div class="logo-icon">EC</div>
+                        <span class="logo-text">EarlyCode</span>
+                    </a>
+                    <p>Empowering developers through hands-on learning, workshops, and community events since 2020. We're committed to bridging the tech skills gap in Africa.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Events</h4>
+                        <ul>
+                            <li><a href="#">Upcoming Events <i class="fas fa-arrow-right"></i></a></li>
+                            <li><a href="#">Past Events <i class="fas fa-arrow-right"></i></a></li>
+                            <li><a href="#">Workshops <i class="fas fa-arrow-right"></i></a></li>
+                            <li><a href="#">Bootcamps <i class="fas fa-arrow-right"></i></a></li>
+                            <li><a href="#">Conferences <i class="fas fa-arrow-right"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Blog <i class="fas fa-arrow-right"></i></a></li>
+                            <li><a href="#">Learning Paths <i class="fas fa-arrow-right"></i></a></li>
+                            <li><a href="#">Community Forum <i class="fas fa-arrow-right"></i></a></li>
+                            <li><a href="#">Instructors <i class="fas fa-arrow-right"></i></a></li>
+                            <li><a href="#">Partner With Us <i class="fas fa-arrow-right"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About EarlyCode <i class="fas fa-arrow-right"></i></a></li>
+                            <li><a href="#">Careers <i class="fas fa-arrow-right"></i></a></li>
+                            <li><a href="#">Contact Us <i class="fas fa-arrow-right"></i></a></li>
+                            <li><a href="#">Privacy Policy <i class="fas fa-arrow-right"></i></a></li>
+                            <li><a href="#">Terms of Service <i class="fas fa-arrow-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EarlyCode. All rights reserved. | <a href="#" style="color: #9ca3af;">Privacy Policy</a> | <a href="#" style="color: #9ca3af;">Terms of Service</a></p>
+                <p>Designed with <i class="fas fa-heart"></i> for the tech community in Africa.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="events-script.js"></script>
+</body>
+</html>
