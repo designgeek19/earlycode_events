@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             let categoryMatch = category === 'all' || category === cardCategory;
             let statusMatch = status === 'all' || status === cardStatus;
-            let dateMatch = true;
+            let dateMatch = true;  
             
             // Date filtering logic
             if (date !== 'upcoming' && date !== 'latest') {
